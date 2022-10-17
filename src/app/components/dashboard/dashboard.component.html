@@ -1,0 +1,24 @@
+<table class="table">
+    <thead>
+        <tr>
+
+            <th>Id</th>
+            <th>UserName</th>
+            <th>Project</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let value of data">
+            <td>{{value.id}}</td>
+            <td>{{value.userName}}</td>
+            <td>{{value.project}}</td>
+            <td>{{value.status}}</td>
+            <td>
+                <clr-icon shape="pencil" (click)="redirectTo(value.id)"></clr-icon>
+                <clr-icon shape="trash"></clr-icon>
+            </td>
+        </tr>
+    </tbody>
+</table>

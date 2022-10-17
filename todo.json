@@ -1,0 +1,6 @@
+{
+    "users": [
+      { "id": 1, "userName": "Vibha", "project": "typicode", "status": "active"},
+      { "id": 2, "userName": "Gurinder", "project": "typicode", "status": "deactive"}
+    ]
+  }
