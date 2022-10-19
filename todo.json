@@ -1,6 +1,70 @@
 {
-    "users": [
-      { "id": 1, "userName": "Vibha", "project": "typicode", "status": "active"},
-      { "id": 2, "userName": "Gurinder", "project": "typicode", "status": "deactive"}
-    ]
-  }
+  "users": [
+    {
+      "id": 2,
+      "userName": "Gurinder",
+      "project": "typicode",
+      "status": "deactive"
+    },
+    {
+      "userName": "nnertyyu",
+      "project": "nn",
+      "status": "nn",
+      "id": 6
+    },
+    {
+      "userName": "asd",
+      "project": "asd",
+      "status": "sada",
+      "id": 7
+    },
+    {
+      "userName": "dd",
+      "project": "assd",
+      "status": "as",
+      "id": 8
+    },
+    {
+      "userName": "dd",
+      "project": "assdsss",
+      "status": "as",
+      "id": 9
+    },
+    {
+      "userName": "Vibha",
+      "project": "typicode",
+      "status": "active",
+      "id": 10
+    },
+    {
+      "userName": "Vibha",
+      "project": "typicoded",
+      "status": "active",
+      "id": 11
+    },
+    {
+      "userName": "Vibha",
+      "project": "typicodedddd",
+      "status": "active",
+      "id": 12
+    },
+    {
+      "userName": "sfd",
+      "project": "sdfs",
+      "status": "sdfsd",
+      "id": 13
+    },
+    {
+      "userName": "Hello Gurindewr",
+      "project": "kdemkmk",
+      "status": "activeh",
+      "id": 14
+    },
+    {
+      "userName": "sss",
+      "project": "ss",
+      "status": "sss",
+      "id": 15
+    }
+  ]
+}

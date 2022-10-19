@@ -13,4 +13,36 @@ describe('TestService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('should call getUserDetail: success', () => {
+
+  });
+
+  it('should call getUserDetail: error', () => {
+
+  });
+
+  it('should call addUser: success', () => {
+
+  });
+
+  it('should call addUser: error', () => {
+
+  });
+
+  it('should call updateUser: success', () => {
+
+  });
+
+  it('should call updateUser: error', () => {
+
+  });
+
+  it('should call deleteUser: success', () => {
+
+  });
+
+  it('should call deleteUser: error', () => {
+
+  });
 });

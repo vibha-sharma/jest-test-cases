@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { CommonService } from '../../services/common.service';
 
 @Component({
   selector: 'app-update',
@@ -7,22 +9,51 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./update.component.scss'],
 })
 export class UpdateComponent implements OnInit {
+  selectedUser: any;
+  userId: any;
+  errorMessage : any;
   updateForm = new FormGroup({
     name: new FormControl('', Validators.required),
     project: new FormControl('', Validators.required),
     status: new FormControl('', Validators.required),
   });
-  constructor() {}
+  constructor(
+    private service: CommonService,
+    private route: ActivatedRoute,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    console.log('ss');
+    this.route.params.subscribe((params) => {
+      this.userId = params['id'];
+    });
+    this.getUserDetails();
+  }
+
+  getUserDetails() {
+    this.service.getUserDetail(this.userId).subscribe((res) => {
+      this.updateForm.patchValue({
+        id: res.id,
+        name: res.userName,
+        project: res.project,
+        status: res.status,
+      });
+    });
   }
 
   resetForm() {
     this.updateForm.reset();
   }
 
-  submit() {
-    // ...
+  redirectTo(){
+    this.router.navigate(['dashboard']);
+  }
+
+  submit(updateForm: any) {
+    this.service.updateUser(updateForm.value, this.userId).subscribe((res) => {
+      this.router.navigate(['dashboard']);
+    }, () => {
+      this.errorMessage = 'Something went wrong. Please refresh the page or try again later.';
+    });
   }
 }

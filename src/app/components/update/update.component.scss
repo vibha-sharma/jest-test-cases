@@ -1,0 +1,14 @@
+.card {
+    margin: 0;
+    border-top: 0;
+    .back-arrow{
+        transform: rotate(270deg);
+        margin-right: 10px;
+    }
+    select {
+        width: 160px;
+    }
+    .submit-action {
+        margin-top: 20px;
+    }
+}

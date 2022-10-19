@@ -22,4 +22,21 @@ describe('UpdateComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should call getUserDetail API inside getUserDetails method', () => {
+
+  });
+
+  it('should call resetForm method', () => {
+
+  });
+
+  it('should call redirectTo method', () => {
+
+  });
+
+  it('should call updateUser API inside submit method for success block', () => {
+
+  });
+
 });
