@@ -10,7 +10,7 @@ import { catchError, map, mergeMap } from 'rxjs/operators';
 })
 
 export class CommonService {
-  publishedMetrics: BehaviorSubject<[]> = new BehaviorSubject<[]>([]);
+  userId: BehaviorSubject<any> = new BehaviorSubject<any>('');
   constructor(private httpService: EasyHttpService) {}
   private headers = new HttpHeaders({
     'Content-Type': 'application/json'

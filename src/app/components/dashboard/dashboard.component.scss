@@ -10,5 +10,11 @@
         .new-user-action {
             float: right;
         }
+        tr td {
+            text-transform: capitalize;
+        }
     }
+}
+select {
+    width: 160px;
 }

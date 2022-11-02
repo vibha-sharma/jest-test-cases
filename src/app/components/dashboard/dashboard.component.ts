@@ -69,5 +69,6 @@ export class DashboardComponent implements OnInit {
 
   redirectTo(id:number){
     this.router.navigate([`update/${id}`]);
+    this.service.userId.next(id);
   }
 }

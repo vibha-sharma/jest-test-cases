@@ -1,70 +1,40 @@
 {
   "users": [
     {
+      "id": 1,
+      "userName": "Kaylee Thomas",
+      "project": "VMware",
+      "status": "active"
+    },
+    {
       "id": 2,
-      "userName": "Gurinder",
-      "project": "typicode",
+      "userName": "Dale Duncan",
+      "project": "VMware",
+      "status": "active"
+    },
+    {
+      "id": 3,
+      "userName": "Brittany Meyer",
+      "project": "VMware",
       "status": "deactive"
     },
     {
-      "userName": "nnertyyu",
-      "project": "nn",
-      "status": "nn",
-      "id": 6
+      "id": 4,
+      "userName": "Frederick Harris",
+      "project": "VMware",
+      "status": "active"
     },
     {
-      "userName": "asd",
-      "project": "asd",
-      "status": "sada",
-      "id": 7
-    },
-    {
-      "userName": "dd",
-      "project": "assd",
-      "status": "as",
-      "id": 8
-    },
-    {
-      "userName": "dd",
-      "project": "assdsss",
-      "status": "as",
-      "id": 9
+      "id": 5,
+      "userName": "Antonio Thompson",
+      "project": "VMware",
+      "status": "deactive"
     },
     {
       "userName": "Vibha",
       "project": "typicode",
       "status": "active",
-      "id": 10
-    },
-    {
-      "userName": "Vibha",
-      "project": "typicoded",
-      "status": "active",
-      "id": 11
-    },
-    {
-      "userName": "Vibha",
-      "project": "typicodedddd",
-      "status": "active",
-      "id": 12
-    },
-    {
-      "userName": "sfd",
-      "project": "sdfs",
-      "status": "sdfsd",
-      "id": 13
-    },
-    {
-      "userName": "Hello Gurindewr",
-      "project": "kdemkmk",
-      "status": "activeh",
-      "id": 14
-    },
-    {
-      "userName": "sss",
-      "project": "ss",
-      "status": "sss",
-      "id": 15
+      "id": 6
     }
   ]
 }

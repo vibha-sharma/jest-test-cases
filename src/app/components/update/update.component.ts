@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CommonService } from '../../services/common.service';
 
@@ -19,14 +19,13 @@ export class UpdateComponent implements OnInit {
   });
   constructor(
     private service: CommonService,
-    private route: ActivatedRoute,
     private router: Router
   ) {}
 
   ngOnInit(): void {
-    this.route.params.subscribe((params) => {
-      this.userId = params['id'];
-    });
+    this.service.userId.subscribe(id => {
+      this.userId = id;
+    })
     this.getUserDetails();
   }
 

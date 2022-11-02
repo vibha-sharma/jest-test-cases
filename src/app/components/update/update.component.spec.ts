@@ -24,7 +24,7 @@ describe('UpdateComponent', () => {
   });
 
   it('should call getUserDetail API inside getUserDetails method', () => {
-
+    // Set this.userId observable first
   });
 
   it('should call resetForm method', () => {
